@@ -3,15 +3,16 @@
     <head>
         <title> Home - Portofolio </title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
 
     <body>
 
  <!-- Nav Section Start -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Yoshua R.R</a>
+      <a class="navbar-brand" href="#"> Woosh Tour</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,11 +35,10 @@
               <li><a class="dropdown-item" href="/sosmed/">Social Media</a></li>
             </ul>
           </li>
-        
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -46,14 +46,96 @@
 <!-- Nav Section End -->
 
 <!-- First Layout Start -->
-<div class="container-fluid bg-dark text-light text-center" style="height:100vh;">
-  <div class="row align-items-center border">
-    <div class="col-10 ">
-      Welcome to my Portofolio
+<div class="container-fluid bg-dark text-light text-center" style="height:100%;">
+
+  <!-- carousel image start -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="col-2 border">
-      <img src="Amongus.png" width="120px">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="asset/africa.jpg" class="d-block w-100" alt="africa" style="height: 350px;">
+        <div class="carousel-caption ">
+          <h5>Hello!! Welcome To Woosh Tour!</h5>
+          <p>Welcome to this great destination, a place where endless adventures and beautiful memories begin.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="asset/america.png" class="d-block w-100" alt="america" style="height: 350px;">
+        <div class="carousel-caption">
+          <h5>Grand Canyon, a Natural Wonder in Northern Arizona, United States</h5>
+          <p>Find your tourist destination with adequate prices and facilities!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="asset/bali.jpeg" class="d-block w-100" alt="makam 3" style="height: 350px;">
+        <div class="carousel-caption ">
+          <h5>Bali, Indonesia</h5>
+          <p>If you want to go to a destination abroad such as Europe, Africa and America, of course we can help you.</p>
+        </div>
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- carousel image end -->
+  <div class="row align-items-center">
+    <div class="col-12 mt-4">
+      <img src="/asset/man-removebg-preview.png" width="200px">
+      <h2> Woosh Tour! Go Around The World! </h2>
+      <p> Welcome to our website!!! Please choose the trip you want </p>
+    </div>
+  </div> 
+    <div class="row"> 
+      <div class="col-md-4 g-4"> <!-- card 1 -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Europe</h5>
+            <p class="card-text"> Enjoy an unforgettable adventure in Europe with our tours. Dive into grand history, explore beautiful cities, and enjoy cultural wonders and enticing culinary treasures. </p>
+            <a href="/about/index.html" class="btn btn-dark">Let's around Europe!</a>
+          </div>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            new trip!
+        </div>
+      </div>
+
+      <div class="col-md-4 g-4"> <!-- card 2 -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Asia</h5>
+            <p class="card-text">Fly to Asia with our tours, experience the wonders of rich cultures, explore stunning landscapes and enjoy compelling authentic cuisine every step of your journey.</p>
+            <a href="/about/index.html" class="btn btn-dark">Let's around Asia!</a>
+          </div>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            15% off!
+        </div>
+      </div>
+
+    <div class="col-md-4 g-4"> <!-- card 3 -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">America</h5>
+          <p class="card-text">Explore America with our adventurous tours. Explore cultural diversity, be enchanted by epic landscapes, and enjoy unforgettable experiences on the American continent.</p>
+          <a href="/about/index.html" class="btn btn-dark">Let's around America!</a>
+        </div>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          20% off!
+      </div>
+    </div>
+  </div>
+
+
+    <!-- card end -->
+
   </div>
 </div>
 <!-- First Layout End -->
